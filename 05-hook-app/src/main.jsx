@@ -1,7 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { TodoApp } from './08-useReducer/TodoApp'
+import { MainApp } from './09-useContext/MainApp'
+import { BrowserRouter } from "react-router-dom";
+// import { TodoApp } from './08-useReducer/TodoApp'
 // import { Padre } from './07-tarea-memo/Padre'
 // import { Hijo } from './07-tarea-memo/Hijo'
 // import { CallbackHook } from './06-memos/CallbackHook'
@@ -18,7 +20,9 @@ import { TodoApp } from './08-useReducer/TodoApp'
 // import './08-useReducer/intro-reducer'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <TodoApp/>
-  </StrictMode>,
+  <BrowserRouter>
+    {/* <StrictMode> */}
+    <MainApp/>
+  {/* </StrictMode> */}
+  </BrowserRouter>,
 )
