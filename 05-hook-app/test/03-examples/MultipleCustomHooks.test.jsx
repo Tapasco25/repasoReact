@@ -42,14 +42,14 @@ describe('Pruebas en <MultipleCustomHooks />', () => {
     test('debe de mostrar un Quote', () => {
 
         useFetch.mockReturnValue({
-            data: [{ author: 'Fernando', quote: 'Hola Mundo' }],
+            data: [{ author: 'Nicol', quote: 'Hola Mundo' }],
             isLoading: false,
             hasError: null
         });
         
         render( <MultipleCustomHooks /> );
         expect( screen.getByText('Hola Mundo') ).toBeTruthy();
-        expect( screen.getByText('Fernando') ).toBeTruthy();
+        expect( screen.getByText('Nicol') ).toBeTruthy();
         
         const nextButton = screen.getByRole('button',{ name: 'Next quote' });
         expect(nextButton.disabled).toBeFalsy();
@@ -60,7 +60,7 @@ describe('Pruebas en <MultipleCustomHooks />', () => {
 
     
         useFetch.mockReturnValue({
-            data: [{ author: 'Fernando', quote: 'Hola Mundo' }],
+            data: [{ author: 'Nicol', quote: 'Hola Mundo' }],
             isLoading: false,
             hasError: null
         });

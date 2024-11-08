@@ -5,8 +5,8 @@ import { useForm } from '../../src/hooks/useForm';
 describe('Pruebas en useForm', () => {
 
     const initialForm = {
-        name: 'Fernando',
-        email: 'fernando@google.com'
+        name: 'Nicol',
+        email: 'nicol@google.com'
     }
 
 

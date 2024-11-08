@@ -7,7 +7,7 @@ describe('Pruebas en <HomePage />', () => {
 
     const user = {
         id: 1,
-        name: 'Fernando'
+        name: 'Nicol'
     }
 
     test('debe de mostrar el componente sin el usuario', () => {
