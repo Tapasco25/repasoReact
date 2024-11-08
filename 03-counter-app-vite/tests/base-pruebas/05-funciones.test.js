@@ -19,7 +19,7 @@ describe('Pruebas en 05-funciones', () => {
 
     test('getUsuarioActivo debe de retornar un objeto', () => {
         
-        const name = 'Fernando';
+        const name = 'Nicol';
 
         const user = getUsuarioActivo( name );
         

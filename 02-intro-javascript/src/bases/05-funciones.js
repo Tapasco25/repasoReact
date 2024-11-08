@@ -27,5 +27,5 @@ const getUsuarioActivo = (nombre)=>
         username:nombre,
     })
 
-const usuarioActivo = getUsuarioActivo('Nicol');
+const usuarioActivo = getUsuarioActivo('nicol');
 console.log(usuarioActivo)
